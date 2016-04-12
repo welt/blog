@@ -8,13 +8,19 @@
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
+      <div class="wrapper--blog">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
-    
+	{% include footer.html %}
+
+	{% include cookie-policy.html %}
+
+	{% include privacy.html %}
+
+	{% include terms.html %}
+
     <!--[if lt IE 9]>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <![endif]-->
@@ -23,7 +29,11 @@
 		<script>window.jQuery || document.write('<script src="/js/jquery.min.js">\x3C/script>')</script>
     <!--<![endif]-->
 
-	<script src="{{ '/js/site.js' | prepend: site.baseurl }}"></script>
+	<script src="/js/site.js"></script>
+
+	{% include script-google.html %}
+
+	{% include banner-eucookie.html %}
 
   </body>
 
