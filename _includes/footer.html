@@ -53,20 +53,20 @@
           </li>
           {% endif %}
 
+          {% if site.show_rss %}
+            <li>
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
+                <span class="icon icon-rss"></span>
+                <span class="label">RSS</span>
+            </a>
+          </li>
+          {% endif %}
+          
           {% if site.parent_url %}
             <li>
             <a href="{{ site.parent_url }}">
                 <span class="icon icon-earth"></span>
                 <span class="label">Web</span>
-            </a>
-          </li>
-          {% endif %}
-          
-          {% if site.show_rss %}
-            <li>
-            <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
-                <span class="icon icon-rss"></span>
-                <span class="label">Subscribe via RSS</span>
             </a>
           </li>
           {% endif %}
