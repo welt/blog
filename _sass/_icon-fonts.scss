@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'dm';
-    src:    url('../fonts/dm.eot?ee1wki');
-    src:    url('../fonts/dm.eot?ee1wki#iefix') format('embedded-opentype'),
-        url('../fonts/dm.ttf?ee1wki') format('truetype'),
-        url('../fonts/dm.woff?ee1wki') format('woff'),
-        url('../fonts/dm.svg?ee1wki#dm') format('svg');
+    src:    url('../fonts/dm.eot?9v234s');
+    src:    url('../fonts/dm.eot?9v234s#iefix') format('embedded-opentype'),
+        url('../fonts/dm.ttf?9v234s') format('truetype'),
+        url('../fonts/dm.woff?9v234s') format('woff'),
+        url('../fonts/dm.svg?9v234s#dm') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -92,6 +92,9 @@
 }
 .icon-cancel-circle:before {
     content: "\e915";
+}
+.icon-rss:before {
+    content: "\e918";
 }
 .icon-blogger:before {
     content: "\e916";
