@@ -4,20 +4,36 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            {% if post.featured_image %}
+                <picture>
+                    <img src="{{ post.featured_image }}" />
+                </picture>
+            {% endif %}
+
+            <header class="post__header">
+
+                <h2 class="post__title" itemprop="name headline">{{ post.title }}</h2>
+
+            </header>
+
+            {{ post.content }}
+
+            <p class="post__meta ita small">
+                Posted on <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </time>{% if post.author %}, by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
+            </p>
+
+        </article>
+
+        <span class="swash">&hellip;</span>
+
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
