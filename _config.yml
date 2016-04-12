@@ -35,3 +35,8 @@ youtube_username: DistinctiveMarketing
 # blog_url: http://blog.distinctive.marketing/
 hashtags: marketing,consulting,contracting
 google_ua: UA-71973220-1
+
+
+exclude:
+  - "_bower_components"
+  - "bower.json"
