@@ -14,6 +14,16 @@
     </div>
 
     {% include footer.html %}
+    
+    <!--[if lt IE 9]>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/js/jquery.min.js">\x3C/script>')</script>
+    <!--<![endif]-->
+
+	<script src="{{ '/js/site.js' | prepend: site.baseurl }}"></script>
 
   </body>
 
