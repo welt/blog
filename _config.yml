@@ -14,8 +14,22 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+parent_url: "http://distinctive.marketing/"
+
+src: DS Marketing & Contracting Ltd
+skype_username: danieljselby
+facebook_username: DistinctiveMarketing
+twitter_username: DistinctiveMktg
+google_username: DistinctiveMarketing
+linkedin_username: distinctive-marketing
+instagram_username: distinctive.marketing
+pinterest_username: distinctivemktg
+youtube_username: DistinctiveMarketing
+# blogger_username:
+# blog_url: http://blog.distinctive.marketing/
+hashtags: marketing,consulting,contracting
+google_ua: UA-71973220-1
