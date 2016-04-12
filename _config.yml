@@ -13,6 +13,9 @@ phone_main:  "+44 (0) 203 7003241"
 # email: dan@ds-marketing.co.uk
 description: > # this means to ignore newlines until "baseurl:"
  Distinctive Marketing blog: News and articles from Distinctive Marketing
+ 
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
